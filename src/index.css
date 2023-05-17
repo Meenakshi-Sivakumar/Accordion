@@ -11,7 +11,7 @@ Variables
   --clr-primary-3: hsl(240, 9%, 76%);
   --clr-primary-4: hsl(240, 7%, 55%);
   /* primary/main color */
-  --clr-primary-5: hsl(210, 7%, 55%);
+  --clr-primary-5: hsl(210, 4%, 42%);
   /* darker shades of primary color */
   --clr-primary-6: hsl(224, 17%, 32%);
   --clr-primary-7: hsl(226, 14%, 25%);
@@ -78,7 +78,6 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
@@ -130,9 +129,14 @@ global classes
 
 /* section */
 .section {
-  width: 90vw;
+  width: 30vw;
+  max-width: 30vw;
+  padding: 2rem 5rem;
+  padding-bottom: 4rem;
   margin: 10% auto;
-  max-width: var(--max-width);
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  box-shadow: var(--light-shadow);
 }
 
 @media screen and (min-width: 992px) {
@@ -140,9 +144,90 @@ global classes
     width: 95vw;
   }
 }
+.head {
+  max-width: 25vw;
+  margin: 2.5rem auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+.head h3{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /*
 ===============
 Accordion
 ===============
 */
+.accordion {
+  padding: 0.25rem 0;
+  /* background-color: red; */
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-header h4 {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+}
+.accordion p {
+  width: 25rem;
+  font-size: 0.9rem;
+  color: var(--clr-primary-6);
+}
+.btn {
+  position: relative;
+  top: 40%;
+  padding-top: 0.25rem;
+  border: 0.5px solid rgba(0, 0, 0,0.4);
+  border-radius: 0.3rem;
+  background-color: transparent;
+  outline: transparent;
+}
+.underline {
+  height: 0.10rem;
+  width: 30vw;
+  background-color: var(--clr-grey-9);
+  margin-top: 0.5rem;
+}
+.dark {
+  color: var(--clr-primary-6);
+}
+.light {
+  color: var(--clr-primary-4)
+}
+.circle {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-color: hsla(211, 27%, 70%, 0.184);
+  border: 0.2px solid  hsla(211, 27%, 70%, 0.163);
+  z-index: -20;
+}
+.one {
+  border-radius: 8rem 7rem 10rem 7rem;
+  top: 5rem;
+  left: 35rem;
+}
+.two {
+  border-radius: 10rem 15rem 9rem 8rem;
+  top: 6rem;
+  left: 30rem;
+
+}
+.three {
+  border-radius: 8rem 12rem 10rem 15rem;
+  top: 40rem;
+  right: 35rem;
+}
+.four {
+  border-radius: 15rem 10rem 9rem 10rem;
+  top: 39rem;
+  right: 30rem;
+}
