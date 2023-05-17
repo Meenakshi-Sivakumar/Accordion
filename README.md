@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Internet Accordion</h1>
-  <img src="screenshot.png" alt="Internet Accordion Screenshot" />
+  <img src="accordion.PNG" alt="Internet Accordion Screenshot" />
 </div>
 
 ## Description
